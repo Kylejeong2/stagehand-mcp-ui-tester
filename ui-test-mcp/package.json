@@ -2,14 +2,17 @@
   "name": "ui-test-mcp",
   "version": "1.0.0",
   "description": "MCP command-line tool for UI testing with Playwright and Stagehand",
-  "main": "dist/server.js",
+  "type": "module",
   "bin": {
-    "ui-test-mcp": "./dist/server.js"
+    "ui-test-mcp": "dist/index.js"
   },
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "build": "tsc",
-    "start": "node dist/server.js",
-    "dev": "bun run src/server.ts",
+    "build": "tsc && shx chmod +x dist/*.js",
+    "start": "node dist/index.js",
+    "dev": "bun run src/index.ts",
     "test": "playwright test"
   },
   "keywords": [
@@ -34,6 +37,7 @@
     "typescript": "^5.3.3"
   },
   "devDependencies": {
-    "@types/express": "^5.0.0"
+    "@types/express": "^5.0.0",
+    "shx": "^0.3.4"
   }
 }
