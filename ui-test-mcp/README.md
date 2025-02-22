@@ -1,4 +1,5 @@
 # UI Test MCP Tool
+[![smithery badge](https://smithery.ai/badge/@Kylejeong2/stagehand-mcp-ui-tester)](https://smithery.ai/server/@Kylejeong2/stagehand-mcp-ui-tester)
 
 An MCP-compatible command-line tool for testing React/Next.js UI components using AI-powered Stagehand tests.
 
@@ -14,6 +15,15 @@ An MCP-compatible command-line tool for testing React/Next.js UI components usin
 
 ## Installation
 
+### Installing via Smithery
+
+To install UI Test MCP for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@Kylejeong2/stagehand-mcp-ui-tester):
+
+```bash
+npx -y @smithery/cli install @Kylejeong2/stagehand-mcp-ui-tester --client claude
+```
+
+### Manual Installation
 ```bash
 npm install
 npm run build
